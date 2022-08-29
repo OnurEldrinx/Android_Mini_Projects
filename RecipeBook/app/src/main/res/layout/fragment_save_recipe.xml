@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveRecipeFragment">
+
+
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Choose image from gallery"
+        android:src="@drawable/add_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRecipeName"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Recipe Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeImage" />
+
+    <EditText
+        android:id="@+id/editTextIngredients"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Ingredients"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRecipeName" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIngredients"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIngredients" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Clear"
+        app:layout_constraintStart_toStartOf="@+id/editTextIngredients"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIngredients" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

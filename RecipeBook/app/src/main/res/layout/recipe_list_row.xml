@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recipeRowId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Macaroni"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:textColor="#673AB7"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        android:textColorHighlight="#FF0000"
+        android:fontFamily="cursive"
+        android:background="#B4DEFF"
+
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
